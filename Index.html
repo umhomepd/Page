@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <link rel="apple-touch-icon" href="data:image/jpeg;base64,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">
+  <link rel="icon" type="image/jpeg" href="data:image/jpeg;base64,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">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="อัมโฮมคาร์">
+  <meta name="theme-color" content="#8B0000">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root { --green: #28a745; --red: #dc3545; --blue: #0dcaf0; --yellow: #ffc107; --purple: #6f42c1; --orange: #fd7e14; --teal: #20c997; --grey: #6c757d; }
+    body { background: #f4f6f9; font-family: sans-serif; padding-bottom: 60px; }
+    .nav-user { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 8px 15px; margin-bottom: 15px; position: sticky; top: 0; z-index: 100; }
+    .status-green  { border-left: 8px solid var(--green)  !important; background-color: #e8f5e9 !important; }
+    .status-red    { border-left: 8px solid var(--red)    !important; background-color: #ffebee !important; }
+    .status-blue   { border-left: 8px solid var(--blue)   !important; background-color: #e0f7fa !important; }
+    .status-yellow { border-left: 8px solid var(--yellow) !important; background-color: #fffde7 !important; }
+    .status-yellow.overdue { border-left: 8px solid var(--red) !important; background-color: #ffebee !important; }
+    .status-orange { border-left: 8px solid var(--orange) !important; background-color: #fff3e0 !important; }
+    .status-teal   { border-left: 8px solid var(--teal)   !important; background-color: #e0f8f1 !important; }
+    .status-grey   { border-left: 8px solid var(--grey)   !important; background-color: #f0f0f0 !important; }
+    .hidden { display: none !important; }
+    .login-card { border-radius: 15px; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-top: 20px; }
+    .btn-login { border-radius: 10px; font-weight: bold; padding: 15px; font-size: 1.1rem; }
+    .table td, .table th { font-size: 0.9rem; padding: 10px 8px; }
+    .btn-sm { padding: 6px 10px; font-size: 0.82rem; }
+    .form-select, .form-control { height: 45px; }
+    textarea.form-control { height: auto; }
+    .avatar { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 2px solid #dee2e6; }
+    .avatar-placeholder { width: 38px; height: 38px; border-radius: 50%; background: #6c757d; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1rem; flex-shrink: 0; }
+    .summary-card { border-radius: 12px; padding: 12px 10px; text-align: center; border: none; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+    .summary-card .num { font-size: 1.6rem; font-weight: bold; line-height: 1; }
+    .summary-card .label { font-size: 0.72rem; margin-top: 4px; }
+    .overdue-badge { font-size: 0.7rem; background: #dc3545; color: #fff; border-radius: 6px; padding: 1px 5px; margin-left: 4px; }
+    #loadingOverlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.8); z-index: 9999; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px; }
+    .spinner-border { width: 2.5rem; height: 2.5rem; }
+    .remark-text { white-space: pre-wrap; word-break: break-word; }
+    .dup-warning { font-size: 0.75rem; color: #dc3545; margin-top: 4px; display: none; }
+    .nav-tabs .nav-link { color: #495057; border: none; border-bottom: 3px solid transparent; font-weight: 500; padding: 10px 15px; }
+    .nav-tabs .nav-link.active { color: var(--purple); border-bottom-color: var(--purple); background: none; }
+    .tab-content > .tab-pane { display: none; }
+    .tab-content > .active { display: block; }
+    .marketplace-card { border-left: 5px solid var(--purple); background: #f3e5f5; padding: 12px; border-radius: 8px; margin-bottom: 10px; }
+    .btn-accept { background: #28a745; color: white; font-size: 0.85rem; padding: 6px 12px; }
+    .btn-accept:hover { background: #218838; color: white; }
+    .btn-send-market { background: var(--purple); color: white; font-size: 0.85rem; }
+    .btn-send-market:hover { background: #5a32a3; color: white; }
+    /* สีจุดสถานะใน select option */
+    option[value="ไปต่อได้"]    { color: #28a745; }
+    option[value="ไปต่อไม่ได้"] { color: #dc3545; }
+    option[value="ปิดการขาย"]   { color: #17a2b8; }
+    option[value="ติดตาม"]      { color: #e6a817; }
+    option[value="จองแล้ว"]     { color: #fd7e14; }
+    option[value="จัดไฟแนนซ์"]  { color: #20c997; }
+    option[value="ไม่ให้ความร่วมมือ"] { color: #6c757d; }
+  </style>
+</head>
+<body>
+
+<div id="loadingOverlay" class="hidden">
+  <div class="spinner-border text-primary" role="status"></div>
+  <div class="text-secondary small" id="loadingText">กำลังโหลด...</div>
+</div>
+
+<!-- หน้า Login -->
+<div id="loginPage" class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-4 card p-4 login-card text-center">
+      <div class="mb-4">
+        <img src="https://i.ibb.co/cKkMmKsB/image.jpg" alt="Logo"
+             style="width:120px;height:auto;margin-bottom:15px;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+        <h3 class="fw-bold" style="color:#0d6efd;">อัมโฮมคาร์</h3>
+        <p class="text-muted small">ระบบจัดการข้อมูลลูกค้า (CRM)</p>
+        <hr>
+      </div>
+      <div class="mb-3 text-start">
+        <label class="form-label fw-bold small text-secondary">ชื่อผู้ใช้งาน</label>
+        <input type="text" id="user" class="form-control" placeholder="Username" inputmode="text">
+      </div>
+      <div class="mb-4 text-start">
+        <label class="form-label fw-bold small text-secondary">รหัสผ่าน</label>
+        <input type="password" id="pass" class="form-control" placeholder="Password">
+      </div>
+      <button class="btn btn-primary btn-login w-100" onclick="doLogin()">เข้าสู่ระบบ</button>
+      <p class="mt-4 mb-0" style="font-size:0.7rem;color:#bbb;">© 2026 Um Home Car Pluak Daeng</p>
+    </div>
+  </div>
+</div>
+
+<!-- หน้าหลัก -->
+<div id="mainPage" class="hidden">
+  <div class="nav-user d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center gap-2">
+      <div id="navAvatar"></div>
+      <div>
+        <div class="fw-bold small" id="uName"></div>
+        <span id="uRole" class="badge bg-dark" style="font-size:0.65rem;"></span>
+      </div>
+    </div>
+    <button class="btn btn-outline-danger btn-sm" onclick="doLogout()">ออก</button>
+  </div>
+
+  <div class="container-fluid">
+    <!-- Tab Navigation -->
+    <ul class="nav nav-tabs mb-3 bg-white rounded-top shadow-sm" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="tab-cases" data-bs-toggle="tab" data-bs-target="#content-cases" type="button" role="tab">📋 เคสของฉัน</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-marketplace" data-bs-toggle="tab" data-bs-target="#content-marketplace" type="button" role="tab">🏪 ตลาดเคส</button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+      
+      <!-- TAB 1: เคสของฉัน -->
+      <div class="tab-pane fade active show" id="content-cases" role="tabpanel">
+        <!-- Dashboard -->
+        <div class="row g-2 mb-3">
+          <div class="col-3"><div class="summary-card" style="background:#e8f5e9;"><div class="num text-success" id="sumGreen">0</div><div class="label text-success">ไปต่อได้</div></div></div>
+          <div class="col-3"><div class="summary-card" style="background:#ffebee;"><div class="num text-danger" id="sumRed">0</div><div class="label text-danger">ไปต่อไม่ได้</div></div></div>
+          <div class="col-3"><div class="summary-card" style="background:#e0f7fa;"><div class="num text-info" id="sumBlue">0</div><div class="label text-info">ปิดการขาย</div></div></div>
+          <div class="col-3"><div class="summary-card" style="background:#fffde7;"><div class="num text-warning" id="sumYellow">0</div><div class="label text-warning">ติดตาม</div></div></div>
+          <div class="col-6"><div class="summary-card" style="background:#fff3e0;"><div class="num" style="color:#fd7e14;" id="sumOrange">0</div><div class="label" style="color:#fd7e14;">จองแล้ว</div></div></div>
+          <div class="col-6"><div class="summary-card" style="background:#e0f8f1;"><div class="num" style="color:#20c997;" id="sumTeal">0</div><div class="label" style="color:#20c997;">จัดไฟแนนซ์</div></div></div>
+          <div class="col-12"><div class="summary-card" style="background:#f0f0f0;"><div class="num" style="color:#6c757d;" id="sumGrey">0</div><div class="label" style="color:#6c757d;">ไม่ให้ความร่วมมือ</div></div></div>
+        </div>
+
+        <!-- ช่องกรอง -->
+        <div class="bg-white p-3 rounded shadow-sm border mb-3">
+          <div class="row g-2">
+            <div class="col-6 col-md-2">
+              <label class="small fw-bold">เดือน</label>
+              <select id="filterMonth" class="form-select" onchange="filterData()">
+                <option value="">ทั้งหมด</option>
+                <option value="01">มกราคม</option><option value="02">กุมภาพันธ์</option>
+                <option value="03">มีนาคม</option><option value="04">เมษายน</option>
+                <option value="05">พฤษภาคม</option><option value="06">มิถุนายน</option>
+                <option value="07">กรกฎาคม</option><option value="08">สิงหาคม</option>
+                <option value="09">กันยายน</option><option value="10">ตุลาคม</option>
+                <option value="11">พฤศจิกายน</option><option value="12">ธันวาคม</option>
+              </select>
+            </div>
+            <div class="col-6 col-md-2">
+              <label class="small fw-bold">ปี</label>
+              <select id="filterYear" class="form-select" onchange="filterData()">
+                <option value="26">2026</option><option value="27">2027</option><option value="28">2028</option>
+              </select>
+            </div>
+            <div class="col-6 col-md-2">
+              <label class="small fw-bold">สถานะ</label>
+              <select id="filterStatus" class="form-select" onchange="filterData()">
+                <option value="">ทั้งหมด</option>
+                <option value="ไปต่อได้">● ไปต่อได้</option>
+                <option value="ไปต่อไม่ได้">● ไปต่อไม่ได้</option>
+                <option value="ปิดการขาย">● ปิดการขาย</option>
+                <option value="ติดตาม">● ติดตาม</option>
+                <option value="จองแล้ว">● จองแล้ว</option>
+                <option value="จัดไฟแนนซ์">● จัดไฟแนนซ์</option>
+                <option value="ไม่ให้ความร่วมมือ">● ไม่ให้ความร่วมมือ</option>
+              </select>
+            </div>
+            <!-- BUG FIX: เพิ่ม filterSale ที่หายไป -->
+            <div class="col-6 col-md-2">
+              <label class="small fw-bold">เซลล์</label>
+              <select id="filterSale" class="form-select" onchange="filterData()">
+                <option value="">ทั้งหมด</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-4">
+              <label class="small fw-bold">ค้นหา (ID/ชื่อ/เบอร์โทร)</label>
+              <div class="input-group">
+                <input type="text" id="searchInput" class="form-control" placeholder="ค้นหา..." onkeyup="filterData()" inputmode="search">
+                <button class="btn btn-outline-secondary" onclick="clearSearch()">ล้าง</button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-2 text-center p-2 bg-light rounded border">
+            <small class="text-secondary">พบข้อมูล:</small>
+            <span id="caseCount" class="fw-bold text-primary">0</span>
+            <small class="text-secondary">เคส</small>
+          </div>
+        </div>
+
+        <!-- ปุ่ม Admin -->
+        <div id="adminTools" class="mb-3 hidden">
+          <div class="row g-2">
+            <div class="col-12"><button class="btn btn-success w-100 py-2 shadow-sm" onclick="showAddForm()">+ เพิ่มลูกค้าใหม่</button></div>
+            <div class="col-6"><button class="btn btn-dark w-100 py-2 shadow-sm" onclick="openUserManager()">⚙️ จัดการ Users</button></div>
+            <div class="col-6"><button class="btn btn-outline-success w-100 py-2 shadow-sm" onclick="exportExcel()">📥 Export Excel</button></div>
+            <div class="col-6"><button class="btn btn-info w-100 py-2 shadow-sm text-white" onclick="openReport()">📊 รายงานรายเดือน</button></div>
+            <div class="col-6"><button class="btn btn-outline-secondary w-100 py-2 shadow-sm" onclick="openLog()">📋 ประวัติการแก้ไข</button></div>
+          </div>
+        </div>
+
+        <!-- ตารางลูกค้า -->
+        <div class="table-responsive bg-white rounded shadow-sm border">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-light"><tr><th>ข้อมูลลูกค้า</th><th class="text-center">Action</th></tr></thead>
+            <tbody id="customerTable"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- TAB 2: ตลาดเคส -->
+      <div class="tab-pane fade" id="content-marketplace" role="tabpanel">
+        <div class="bg-white p-3 rounded shadow-sm border mb-3">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="mb-0">🏪 ตลาดเคส - เคสที่รอการดูแล</h5>
+            <button class="btn btn-outline-primary btn-sm" onclick="refreshMarketplace()" id="refreshBtn">
+              🔄 รีเฟรช
+            </button>
+          </div>
+          <div id="marketplaceList" class="marketplace-container">
+            <p class="text-muted text-center">กำลังโหลด...</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal: เพิ่ม/แก้ไขลูกค้า -->
+<div class="modal fade" id="customerModal" data-bs-backdrop="static" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header"><h5 id="modalTitle" class="fw-bold">ข้อมูลลูกค้า</h5></div>
+      <div class="modal-body">
+        <input type="hidden" id="custId">
+        <div class="mb-3"><label class="small fw-bold">วันที่ได้รับเบอร์</label><input type="date" id="custDate" class="form-control"></div>
+        <div class="mb-3">
+          <label class="small fw-bold">ชื่อลูกค้า <span class="text-danger">*</span></label>
+          <input type="text" id="custName" class="form-control" placeholder="กรอกชื่อลูกค้า">
+        </div>
+        <div class="mb-3">
+          <label class="small fw-bold">เบอร์โทร <span class="text-danger">*</span></label>
+          <div class="input-group">
+            <input type="tel" id="custPhone" class="form-control" placeholder="กรอกเบอร์โทร" oninput="checkDuplicate(this.value)">
+            <a id="callBtn" href="#" class="btn btn-success hidden" onclick="callCustomer(event)">
+              📞 โทร
+            </a>
+          </div>
+          <div id="dupWarning" class="dup-warning">⚠️ เบอร์นี้มีในระบบแล้ว: <span id="dupDetail"></span></div>
+        </div>
+        <div class="mb-3">
+          <label class="small fw-bold">สถานะ</label>
+          <select id="custStatus" class="form-select">
+            <option value="ไปต่อได้">● ไปต่อได้</option>
+            <option value="ไปต่อไม่ได้">● ไปต่อไม่ได้</option>
+            <option value="ปิดการขาย">● ปิดการขาย</option>
+            <option value="ติดตาม">● ติดตาม</option>
+            <option value="จองแล้ว">● จองแล้ว</option>
+            <option value="จัดไฟแนนซ์">● จัดไฟแนนซ์</option>
+            <option value="ไม่ให้ความร่วมมือ">● ไม่ให้ความร่วมมือ</option>
+          </select>
+        </div>
+        <div class="mb-3" id="assignGroup"><label class="small fw-bold">ผู้ดูแล</label><select id="custAssign" class="form-select"></select></div>
+        <div class="mb-3"><label class="small fw-bold">Remark</label><textarea id="custRemark" class="form-control" rows="3" placeholder="หมายเหตุ..."></textarea></div>
+        <div id="sendMarketplaceGroup" class="mb-3 hidden">
+          <button class="btn btn-send-market w-100" onclick="sendToMarketplaceFromModal()">📤 ส่งเคสเข้าตลาด</button>
+        </div>
+        <div id="moveMonthGroup" class="mb-3 hidden">
+          <button class="btn btn-warning w-100 text-dark fw-bold" onclick="openMoveMonth()">📅 โยนเคสไปเดือนอื่น</button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger px-3 me-auto" id="deleteBtn" onclick="deleteCustomer()" style="display:none;">ลบ</button>
+        <button class="btn btn-secondary px-4" onclick="closeModal()">ปิด</button>
+        <button class="btn btn-primary px-4" id="saveCustomerBtn" onclick="saveCustomer()">บันทึก</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: จัดการ Users -->
+<div class="modal fade" id="userManagerModal" data-bs-backdrop="static" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="fw-bold">⚙️ จัดการ Users</h5>
+        <button class="btn btn-success btn-sm ms-auto" onclick="showUserForm()">+ เพิ่ม User ใหม่</button>
+      </div>
+      <div class="modal-body p-0">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-light"><tr><th>รูป</th><th>Username / Password</th><th>ชื่อ</th><th>Role</th><th class="text-center">แก้ไข</th></tr></thead>
+          <tbody id="userTable"></tbody>
+        </table>
+      </div>
+      <div class="modal-footer"><button class="btn btn-secondary" onclick="closeUserManager()">ปิด</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: เพิ่ม/แก้ไข User -->
+<div class="modal fade" id="userFormModal" data-bs-backdrop="static" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header"><h5 id="userFormTitle" class="fw-bold">เพิ่ม User ใหม่</h5></div>
+      <div class="modal-body">
+        <input type="hidden" id="originalUsername">
+        <div class="mb-3"><label class="small fw-bold">Username <span class="text-danger">*</span></label><input type="text" id="uUsername" class="form-control" placeholder="username"></div>
+        <div class="mb-3"><label class="small fw-bold">Password <span class="text-danger">*</span></label><input type="text" id="uPassword" class="form-control" placeholder="password"></div>
+        <div class="mb-3"><label class="small fw-bold">ชื่อที่แสดง <span class="text-danger">*</span></label><input type="text" id="uDisplayName" class="form-control" placeholder="ชื่อ-นามสกุล"></div>
+        <div class="mb-3"><label class="small fw-bold">Role</label><select id="uRole2" class="form-select"><option value="user">User</option><option value="admin">Admin</option></select></div>
+        <div class="mb-3"><label class="small fw-bold">URL รูปโปรไฟล์ (ถ้ามี)</label><input type="text" id="uImg" class="form-control" placeholder="https://..."></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary px-4" onclick="closeUserForm()">ยกเลิก</button>
+        <button class="btn btn-primary px-4" id="saveUserBtn" onclick="saveUser()">บันทึก</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: ประวัติการแก้ไข -->
+<div class="modal fade" id="logModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="fw-bold">📋 ประวัติการแก้ไข</h5></div>
+      <div class="modal-body p-0">
+        <table class="table table-sm table-hover mb-0">
+          <thead class="table-light"><tr><th>วันที่/เวลา</th><th>Action</th><th>ID</th><th>รายละเอียด</th></tr></thead>
+          <tbody id="logTable"></tbody>
+        </table>
+      </div>
+      <div class="modal-footer"><button class="btn btn-secondary" onclick="closeLog()">ปิด</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: รายงานรายเดือน -->
+<div class="modal fade" id="reportModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="fw-bold">📊 รายงานรายเดือน</h5>
+      </div>
+      <div class="modal-body">
+        <div class="row g-2 mb-3">
+          <div class="col-6">
+            <label class="small fw-bold">เดือน</label>
+            <select id="reportMonth" class="form-select">
+              <option value="">ทั้งหมด</option>
+              <option value="01">มกราคม</option><option value="02">กุมภาพันธ์</option>
+              <option value="03">มีนาคม</option><option value="04">เมษายน</option>
+              <option value="05">พฤษภาคม</option><option value="06">มิถุนายน</option>
+              <option value="07">กรกฎาคม</option><option value="08">สิงหาคม</option>
+              <option value="09">กันยายน</option><option value="10">ตุลาคม</option>
+              <option value="11">พฤศจิกายน</option><option value="12">ธันวาคม</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <label class="small fw-bold">ปี</label>
+            <select id="reportYear" class="form-select">
+              <option value="26">2026</option><option value="27">2027</option>
+            </select>
+          </div>
+          <div class="col-2 d-flex align-items-end">
+            <button class="btn btn-primary w-100" onclick="loadReport()">ดู</button>
+          </div>
+        </div>
+        <div id="reportContent"></div>
+      </div>
+      <div class="modal-footer"><button class="btn btn-secondary" onclick="closeReport()">ปิด</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: โยนเคสไปเดือนอื่น -->
+<div class="modal fade" id="moveMonthModal" data-bs-backdrop="static" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="fw-bold">📅 โยนเคสไปเดือนอื่น</h5>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted small mb-3">เคส <strong id="moveCaseId"></strong> จะถูกย้ายไปขึ้นในเดือนที่เลือก และหายออกจากเดือนปัจจุบัน</p>
+        <div class="row g-2">
+          <div class="col-6">
+            <label class="small fw-bold">เดือนที่ต้องการ</label>
+            <select id="moveTargetMonth" class="form-select">
+              <option value="01">มกราคม</option>
+              <option value="02">กุมภาพันธ์</option>
+              <option value="03">มีนาคม</option>
+              <option value="04">เมษายน</option>
+              <option value="05">พฤษภาคม</option>
+              <option value="06">มิถุนายน</option>
+              <option value="07">กรกฎาคม</option>
+              <option value="08">สิงหาคม</option>
+              <option value="09">กันยายน</option>
+              <option value="10">ตุลาคม</option>
+              <option value="11">พฤศจิกายน</option>
+              <option value="12">ธันวาคม</option>
+            </select>
+          </div>
+          <div class="col-6">
+            <label class="small fw-bold">ปี</label>
+            <select id="moveTargetYear" class="form-select">
+              <option value="26">2026</option>
+              <option value="27">2027</option>
+              <option value="28">2028</option>
+            </select>
+          </div>
+        </div>
+        <div class="mt-3 p-2 bg-warning bg-opacity-10 border border-warning rounded small text-warning-emphasis">
+          ⚠️ เคสจะได้ ID ใหม่ในเดือนนั้น และหายออกจากเดือนปัจจุบัน
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary px-4" onclick="closeMoveMonth()">ยกเลิก</button>
+        <button class="btn btn-warning px-4 text-dark fw-bold" id="confirmMoveBtn" onclick="confirmMoveMonth()">📅 ยืนยันโยนเคส</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+let currentUser = null;
+let allCustomers = [];
+let marketplaceCases = [];
+const OVERDUE_DAYS = 7;
+
+const modalEl          = new bootstrap.Modal(document.getElementById('customerModal'));
+const userManagerModal = new bootstrap.Modal(document.getElementById('userManagerModal'));
+const userFormModal    = new bootstrap.Modal(document.getElementById('userFormModal'));
+const logModal         = new bootstrap.Modal(document.getElementById('logModal'));
+const reportModal      = new bootstrap.Modal(document.getElementById('reportModal'));
+const moveMonthModal   = new bootstrap.Modal(document.getElementById('moveMonthModal'));
+
+function escapeHtml(str) {
+  if (str === null || str === undefined) return '';
+  return str.toString()
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;').replace(/'/g,'&#039;');
+}
+function showLoading(t='กำลังโหลด...') {
+  document.getElementById('loadingText').innerText = t;
+  document.getElementById('loadingOverlay').classList.remove('hidden');
+}
+function hideLoading() { document.getElementById('loadingOverlay').classList.add('hidden'); }
+function renderAvatar(img, name, size=38) {
+  if (img) return `<img src="${escapeHtml(img)}" class="avatar" style="width:${size}px;height:${size}px;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="avatar-placeholder" style="width:${size}px;height:${size}px;display:none;">${escapeHtml(name).charAt(0)}</div>`;
+  return `<div class="avatar-placeholder" style="width:${size}px;height:${size}px;">${escapeHtml(name).charAt(0)}</div>`;
+}
+function daysSince(id) {
+  try {
+    const yy = '20' + id.substring(2,4), mm = id.substring(4,6);
+    return Math.floor((new Date() - new Date(`${yy}-${mm}-01`)) / (1000*60*60*24));
+  } catch(e) { return 0; }
+}
+
+// ===== LOGIN/LOGOUT =====
+function doLogin() {
+  const u = document.getElementById('user').value.trim();
+  const p = document.getElementById('pass').value.trim();
+  if (!u || !p) { alert('กรุณากรอก Username และ Password'); return; }
+  showLoading('กำลังเข้าสู่ระบบ...');
+  google.script.run
+    .withSuccessHandler(user => {
+      hideLoading();
+      if (user) {
+        currentUser = user;
+        document.getElementById('loginPage').classList.add('hidden');
+        document.getElementById('mainPage').classList.remove('hidden');
+        document.getElementById('uName').innerText = user.name;
+        document.getElementById('uRole').innerText = user.role;
+        document.getElementById('navAvatar').innerHTML = renderAvatar(user.img, user.name, 38);
+        document.getElementById('adminTools').classList[user.role.toLowerCase() === 'admin' ? 'remove' : 'add']('hidden');
+        loadData();
+        loadMarketplace();
+      } else {
+        alert('Username หรือรหัสผ่านไม่ถูกต้อง');
+      }
+    })
+    .withFailureHandler(err => { hideLoading(); alert('เกิดข้อผิดพลาด: ' + err); })
+    .login(u, p);
+}
+
+function doLogout() {
+  currentUser = null; allCustomers = []; marketplaceCases = [];
+  document.getElementById('loginPage').classList.remove('hidden');
+  document.getElementById('mainPage').classList.add('hidden');
+  document.getElementById('user').value = '';
+  document.getElementById('pass').value = '';
+}
+
+// ===== โหลดข้อมูล =====
+function loadData() {
+  showLoading('กำลังโหลดข้อมูล...');
+  google.script.run
+    .withSuccessHandler(res => {
+      hideLoading();
+      allCustomers = res.customers;
+
+      // อัปเดต dropdown ผู้ดูแลในฟอร์ม
+      document.getElementById('custAssign').innerHTML =
+        res.userList.map(u => `<option value="${escapeHtml(u)}">${escapeHtml(u)}</option>`).join('');
+
+      // BUG FIX: อัปเดต filterSale (มีอยู่แล้วใน HTML)
+      const fs = document.getElementById('filterSale');
+      const prevVal = fs.value;
+      fs.innerHTML = '<option value="">ทั้งหมด</option>' +
+        res.userList.map(u => `<option value="${escapeHtml(u).toLowerCase()}">${escapeHtml(u)}</option>`).join('');
+      // คืนค่าเดิมถ้ายังมีอยู่
+      if (prevVal) fs.value = prevVal;
+
+      renderTable(allCustomers);
+
+      // ตั้ง filter เป็นเดือนปัจจุบัน เฉพาะครั้งแรกที่โหลด (login ใหม่)
+      const now = new Date();
+      const curMM = String(now.getMonth() + 1).padStart(2, '0');
+      const curYY = now.getFullYear().toString().slice(-2);
+      document.getElementById('filterMonth').value = curMM;
+      document.getElementById('filterYear').value  = curYY;
+
+      filterData();
+    })
+    .withFailureHandler(err => { hideLoading(); alert('โหลดข้อมูลไม่สำเร็จ: ' + err); })
+    .getCustomerData(currentUser);
+}
+
+function loadMarketplace() {
+  google.script.run
+    .withSuccessHandler(cases => {
+      marketplaceCases = cases;
+      renderMarketplace();
+    })
+    .withFailureHandler(err => { console.error('โหลดตลาดไม่สำเร็จ: ' + err); })
+    .getMarketplaceData();
+}
+
+function refreshMarketplace() {
+  const btn = document.getElementById('refreshBtn');
+  btn.disabled = true;
+  btn.innerText = '⏳ กำลังโหลด...';
+  document.getElementById('marketplaceList').innerHTML = '<p class="text-muted text-center">กำลังโหลด...</p>';
+  google.script.run
+    .withSuccessHandler(cases => {
+      marketplaceCases = cases;
+      renderMarketplace();
+      btn.disabled = false;
+      btn.innerText = '🔄 รีเฟรช';
+    })
+    .withFailureHandler(err => {
+      btn.disabled = false;
+      btn.innerText = '🔄 รีเฟรช';
+      alert('โหลดตลาดไม่สำเร็จ: ' + err);
+    })
+    .getMarketplaceData();
+}
+
+function renderMarketplace() {
+  const container = document.getElementById('marketplaceList');
+  if (!marketplaceCases || marketplaceCases.length === 0) {
+    container.innerHTML = '<p class="text-muted text-center">✅ ตลาดว่างอยู่ ไม่มีเคสรอการดูแล</p>';
+    return;
+  }
+  let html = '';
+  marketplaceCases.forEach(c => {
+    // BUG FIX: ใช้ data-* แทนการฝัง string ใน onclick โดยตรง
+    html += `
+      <div class="marketplace-card">
+        <div class="row">
+          <div class="col-9">
+            <div class="fw-bold text-primary">${escapeHtml(c.id)}</div>
+            <div class="fw-bold">${escapeHtml(c.name)}</div>
+            <div class="small text-secondary">${escapeHtml(c.phone)}</div>
+            ${c.remark ? `<div class="small text-muted mt-1">${escapeHtml(c.remark)}</div>` : ''}
+            <div class="small text-muted mt-1">📤 เพิ่มโดย: ${escapeHtml(c.addedBy)}</div>
+          </div>
+          <div class="col-3 text-end d-flex flex-column justify-content-between">
+            <button class="btn btn-accept" data-caseid="${escapeHtml(c.id)}" onclick="acceptMarketplaceCase(this.dataset.caseid)">✓ รับเคส</button>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+  container.innerHTML = html;
+}
+
+// BUG FIX: renderTable ใช้ data-* attributes แทน inline string ใน onclick
+// เพื่อป้องกันพัง เมื่อชื่อ/remark มีเครื่องหมาย ' หรืออักขระพิเศษ
+function renderTable(customers) {
+  const tbody = document.getElementById('customerTable');
+  tbody.innerHTML = '';
+  customers.forEach(row => {
+    const status = row[3] ? row[3].toString() : '';
+    let cls = '';
+    if (status === 'ไปต่อได้') cls = 'status-green';
+    else if (status === 'ไปต่อไม่ได้') cls = 'status-red';
+    else if (status === 'ปิดการขาย') cls = 'status-blue';
+    else if (status === 'ติดตาม') cls = 'status-yellow';
+    else if (status === 'จองแล้ว') cls = 'status-orange';
+    else if (status === 'จัดไฟแนนซ์') cls = 'status-teal';
+    else if (status === 'ไม่ให้ความร่วมมือ') cls = 'status-grey';
+
+    let overdueTag = '';
+    if (status === 'ติดตาม' && daysSince(row[0]) >= OVERDUE_DAYS) {
+      cls += ' overdue';
+      overdueTag = `<span class="overdue-badge">⚠️ เกิน ${OVERDUE_DAYS} วัน</span>`;
+    }
+
+    const safeId     = escapeHtml(row[0] || '');
+    const safePhone  = escapeHtml(row[1] || '');
+    const safeName   = escapeHtml(row[2] || '');
+    const safeStatus = escapeHtml(row[3] || '');
+    const safeAssign = escapeHtml(row[4] || '');
+    const safeRemark = escapeHtml(row[5] || '');
+    const safeDate   = escapeHtml(row[6] || '');
+    if (!safeId) return;
+
+    tbody.innerHTML += `
+      <tr class="${cls}" data-id="${safeId}" data-status="${safeStatus}" data-assign="${safeAssign.toLowerCase()}">
+        <td>
+          <div class="fw-bold text-primary">${safeId} ${overdueTag}</div>
+          <div class="fw-bold">${safeName}</div>
+          <div class="small text-secondary">${safePhone}</div>
+          <div class="small"><span class="badge bg-light text-dark border">${safeStatus}</span> | ${safeAssign}</div>
+          ${safeDate ? `<div class="small text-muted">📅 ${safeDate}</div>` : ''}
+          <div class="small text-muted mt-1 remark-text">${safeRemark || '-'}</div>
+        </td>
+        <td class="text-center">
+          <button class="btn btn-outline-primary btn-sm"
+            data-id="${safeId}"
+            data-name="${safeName}"
+            data-phone="${safePhone}"
+            data-status="${safeStatus}"
+            data-assign="${safeAssign}"
+            data-remark="${safeRemark}"
+            data-date="${safeDate}"
+            onclick="showEditFormFromBtn(this)">จัดการ</button>
+        </td>
+      </tr>`;
+  });
+}
+
+// BUG FIX: ฟังก์ชันใหม่ที่รับ data จาก data-* attribute อย่างปลอดภัย
+function showEditFormFromBtn(btn) {
+  showEditForm(
+    btn.dataset.id,
+    btn.dataset.name,
+    btn.dataset.phone,
+    btn.dataset.status,
+    btn.dataset.assign,
+    btn.dataset.remark,
+    btn.dataset.date
+  );
+}
+
+// ===== กรองข้อมูล =====
+function filterData() {
+  const month  = document.getElementById('filterMonth').value;
+  const year   = document.getElementById('filterYear').value;
+  const status = document.getElementById('filterStatus').value;
+  // BUG FIX: ใช้ optional chaining เผื่อ element ยังไม่ render
+  const saleEl = document.getElementById('filterSale');
+  const sale   = saleEl ? saleEl.value.toLowerCase().trim() : '';
+  const search = document.getElementById('searchInput').value.toLowerCase().trim();
+
+  const rows = document.querySelectorAll('#customerTable tr');
+  let count = 0, g = 0, r = 0, b = 0, y = 0, o = 0, t = 0, gr = 0;
+
+  rows.forEach(row => {
+    const id      = row.dataset.id || '';
+    const content = row.cells[0].innerText.toLowerCase();
+    const dataYear  = id.length >= 4 ? id.substring(2,4) : '';
+    const dataMonth = id.length >= 6 ? id.substring(4,6) : '';
+    const st     = row.dataset.status || '';
+    const assign = (row.dataset.assign || '').toLowerCase();
+
+    const matchYear   = (dataYear === '')  || (dataYear === year);
+    const matchMonth  = (month === '')     || (dataMonth === month);
+    const matchStatus = (status === '')    || (st === status);
+    const matchSale   = (sale === '')      || (assign === sale);
+    const matchSearch = (search === '')    || content.includes(search);
+
+    if (matchYear && matchMonth && matchStatus && matchSale && matchSearch) {
+      row.style.setProperty('display', '', 'important');
+      count++;
+      if (st === 'ไปต่อได้') g++;
+      else if (st === 'ไปต่อไม่ได้') r++;
+      else if (st === 'ปิดการขาย') b++;
+      else if (st === 'ติดตาม') y++;
+      else if (st === 'จองแล้ว') o++;
+      else if (st === 'จัดไฟแนนซ์') t++;
+      else if (st === 'ไม่ให้ความร่วมมือ') gr++;
+    } else {
+      row.style.setProperty('display', 'none', 'important');
+    }
+  });
+
+  document.getElementById('caseCount').innerText  = count;
+  document.getElementById('sumGreen').innerText   = g;
+  document.getElementById('sumRed').innerText     = r;
+  document.getElementById('sumBlue').innerText    = b;
+  document.getElementById('sumYellow').innerText  = y;
+  document.getElementById('sumOrange').innerText  = o;
+  document.getElementById('sumTeal').innerText    = t;
+  document.getElementById('sumGrey').innerText    = gr;
+}
+
+// BUG FIX: clearSearch รีเซ็ต filterSale ด้วย (ก่อนหน้าอาจ error ถ้า element ไม่มี)
+function clearSearch() {
+  document.getElementById('searchInput').value = '';
+  const saleEl = document.getElementById('filterSale');
+  if (saleEl) saleEl.value = '';
+  document.getElementById('filterStatus').value = '';
+  filterData();
+}
+
+// ===== เช็คเบอร์ซ้ำ =====
+function checkDuplicate(phone) {
+  const warn      = document.getElementById('dupWarning');
+  const detail    = document.getElementById('dupDetail');
+  const currentId = document.getElementById('custId').value;
+  if (!phone || phone.length < 5) { warn.style.display = 'none'; return; }
+  const found = allCustomers.find(r => r[1] && r[1].toString() === phone.trim() && r[0] !== currentId);
+  if (found) {
+    detail.innerText = found[0] + ' (' + found[2] + ')';
+    warn.style.display = 'block';
+  } else {
+    warn.style.display = 'none';
+  }
+}
+
+// ===== เพิ่ม/แก้ไขลูกค้า =====
+function showAddForm() {
+  document.getElementById('modalTitle').innerText = 'เพิ่มลูกค้าใหม่';
+  document.getElementById('custId').value = '';
+  document.getElementById('custName').value = '';
+  document.getElementById('custPhone').value = '';
+  document.getElementById('custRemark').value = '';
+  document.getElementById('custStatus').value = 'ไปต่อได้';
+  document.getElementById('custName').disabled = false;
+  document.getElementById('custPhone').disabled = false;
+  document.getElementById('custDate').disabled = false;
+  document.getElementById('dupWarning').style.display = 'none';
+  document.getElementById('callBtn').classList.add('hidden');
+  document.getElementById('assignGroup').classList.remove('hidden');
+  document.getElementById('sendMarketplaceGroup').classList.add('hidden');
+  document.getElementById('moveMonthGroup').classList.add('hidden');
+  document.getElementById('deleteBtn').style.display = 'none';
+  document.getElementById('custDate').value = new Date().toISOString().split('T')[0];
+  modalEl.show();
+}
+
+function showEditForm(id, name, phone, status, assign, remark, date='') {
+  document.getElementById('modalTitle').innerText = 'จัดการ: ' + id;
+  document.getElementById('custId').value     = id;
+  document.getElementById('custName').value   = name;
+  document.getElementById('custPhone').value  = phone;
+  document.getElementById('custStatus').value = status;
+  document.getElementById('custAssign').value = assign;
+  document.getElementById('custRemark').value = remark;
+  document.getElementById('custDate').value   = date;
+  document.getElementById('dupWarning').style.display = 'none';
+
+  // แสดงปุ่มโทรพร้อมเบอร์ลูกค้า
+  const callBtn = document.getElementById('callBtn');
+  const cleanPhone = phone.replace(/[-\s]/g, '');
+  callBtn.href = 'tel:' + cleanPhone;
+  callBtn.classList[cleanPhone ? 'remove' : 'add']('hidden');
+
+  const isAdmin = currentUser.role.toLowerCase() === 'admin';
+  document.getElementById('custName').disabled  = !isAdmin;
+  document.getElementById('custPhone').disabled = !isAdmin;
+  document.getElementById('custDate').disabled  = !isAdmin;
+  document.getElementById('deleteBtn').style.display = isAdmin ? '' : 'none';
+
+  if (!isAdmin) document.getElementById('assignGroup').classList.add('hidden');
+  else document.getElementById('assignGroup').classList.remove('hidden');
+
+  // แสดงปุ่มส่งตลาด ถ้าสถานะไม่ใช่ปิดการขาย (ทั้ง admin และ user)
+  const canSend = status !== 'ปิดการขาย';
+  document.getElementById('sendMarketplaceGroup').classList[canSend ? 'remove' : 'add']('hidden');
+
+  // แสดงปุ่มโยนเคสไปเดือนอื่น (ทุก user ทำได้)
+  document.getElementById('moveMonthGroup').classList.remove('hidden');
+
+  modalEl.show();
+}
+
+function closeModal() { modalEl.hide(); }
+
+function callCustomer(e) {
+  const phone = document.getElementById('custPhone').value.trim().replace(/[-\s]/g, '');
+  if (!phone) { e.preventDefault(); return; }
+  document.getElementById('callBtn').href = 'tel:' + phone;
+}
+
+
+
+function deleteCustomer() {
+  const id = document.getElementById('custId').value;
+  if (!id) return;
+  if (!confirm('ยืนยันลบลูกค้า ' + id + ' ?\nข้อมูลจะหายถาวร ไม่สามารถกู้คืนได้')) return;
+  const btn = document.getElementById('saveCustomerBtn');
+  btn.disabled = true;
+  google.script.run
+    .withSuccessHandler(res => {
+      btn.disabled = false;
+      alert(res.msg || res);
+      modalEl.hide();
+      // Optimistic: ลบออกจาก allCustomers และ re-render ทันที ไม่รอ loadData
+      if (res.deletedId) {
+        allCustomers = allCustomers.filter(r => r[0] !== res.deletedId);
+        renderTable(allCustomers);
+        filterData();
+      } else {
+        loadData();
+      }
+    })
+    .withFailureHandler(err => { btn.disabled = false; alert('ลบไม่สำเร็จ: ' + err); })
+    .processCustomer('delete', { id }, currentUser.role);
+}
+
+function saveCustomer() {
+  const name  = document.getElementById('custName').value.trim();
+  const phone = document.getElementById('custPhone').value.trim();
+  if (!name || !phone) { alert('กรุณากรอกชื่อลูกค้าและเบอร์โทรให้ครบ'); return; }
+  const id  = document.getElementById('custId').value;
+  const btn = document.getElementById('saveCustomerBtn');
+  btn.disabled = true; btn.innerText = 'กำลังบันทึก...';
+  const data = {
+    id, name, phone,
+    status:       document.getElementById('custStatus').value,
+    assignedUser: document.getElementById('custAssign').value,
+    remark:       document.getElementById('custRemark').value,
+    date:         document.getElementById('custDate').value
+  };
+  google.script.run
+    .withSuccessHandler(res => {
+      btn.disabled = false; btn.innerText = 'บันทึก';
+      alert(res.msg || res);
+      modalEl.hide();
+      if (id === '' && res.newRecord) {
+        // เพิ่มใหม่: push เข้า allCustomers แล้ว re-render ทันที
+        allCustomers.push(res.newRecord);
+        renderTable(allCustomers);
+        filterData();
+      } else if (res.updatedData) {
+        // แก้ไข: อัปเดตใน allCustomers แล้ว re-render ทันที
+        const idx = allCustomers.findIndex(r => r[0] === res.updatedData.id);
+        if (idx !== -1) {
+          allCustomers[idx][1] = res.updatedData.phone;
+          allCustomers[idx][2] = res.updatedData.name;
+          allCustomers[idx][3] = res.updatedData.status;
+          allCustomers[idx][4] = res.updatedData.assignedUser;
+          allCustomers[idx][5] = res.updatedData.remark;
+          allCustomers[idx][6] = res.updatedData.date;
+        }
+        renderTable(allCustomers);
+        filterData();
+      } else {
+        loadData();
+      }
+    })
+    .withFailureHandler(err => { btn.disabled = false; btn.innerText = 'บันทึก'; alert('บันทึกไม่สำเร็จ: ' + err); })
+    .processCustomer(id === '' ? 'add' : 'update', data, currentUser.role);
+}
+
+// ===== โยนเคสไปเดือนอื่น =====
+function openMoveMonth() {
+  const id = document.getElementById('custId').value;
+  if (!id) return;
+
+  // ตั้งค่า default เป็นเดือนถัดไป
+  const now = new Date();
+  let nextMonth = now.getMonth() + 2; // +2 เพราะ getMonth() เริ่มที่ 0
+  let nextYear  = now.getFullYear();
+  if (nextMonth > 12) { nextMonth = 1; nextYear++; }
+  const yy = nextYear.toString().slice(-2);
+  const mm = String(nextMonth).padStart(2, '0');
+
+  document.getElementById('moveCaseId').innerText = id;
+  document.getElementById('moveTargetMonth').value = mm;
+  document.getElementById('moveTargetYear').value  = yy;
+
+  // อัปเดต option ปีให้ครอบคลุม
+  const yearSel = document.getElementById('moveTargetYear');
+  yearSel.innerHTML = '';
+  for (let y = parseInt(now.getFullYear().toString().slice(-2)); y <= parseInt(now.getFullYear().toString().slice(-2)) + 2; y++) {
+    yearSel.innerHTML += `<option value="${y}">${2000 + y}</option>`;
+  }
+  yearSel.value = yy;
+
+  modalEl.hide();
+  moveMonthModal.show();
+}
+
+function closeMoveMonth() {
+  moveMonthModal.hide();
+  modalEl.show();
+}
+
+function confirmMoveMonth() {
+  const caseId = document.getElementById('moveCaseId').innerText;
+  const mm     = document.getElementById('moveTargetMonth').value;
+  const yy     = document.getElementById('moveTargetYear').value;
+
+  // เช็คว่าไม่ใช่เดือนปัจจุบันของเคส
+  const currentPrefix = caseId.substring(2, 6); // เช่น 2604
+  const targetPrefix  = yy + mm;
+  if (currentPrefix === targetPrefix) {
+    alert('เคสนี้อยู่ในเดือนนี้อยู่แล้ว กรุณาเลือกเดือนอื่น');
+    return;
+  }
+
+  const btn = document.getElementById('confirmMoveBtn');
+  btn.disabled = true;
+  btn.innerText = '⏳ กำลังโยนเคส...';
+
+  google.script.run
+    .withSuccessHandler(res => {
+      btn.disabled  = false;
+      btn.innerText = '📅 ยืนยันโยนเคส';
+      if (res.success) {
+        alert(res.msg);
+        moveMonthModal.hide();
+        loadData();
+      } else {
+        alert(res.msg || 'เกิดข้อผิดพลาด');
+      }
+    })
+    .withFailureHandler(err => {
+      btn.disabled  = false;
+      btn.innerText = '📅 ยืนยันโยนเคส';
+      alert('โยนเคสไม่สำเร็จ: ' + err);
+    })
+    .moveToMonth(caseId, yy, mm, currentUser.username);
+}
+
+
+function sendToMarketplaceFromModal() {
+  const id = document.getElementById('custId').value;
+  if (!id) return;
+  if (!confirm('ต้องการส่งเคสนี้เข้าตลาด?\nคนอื่นจะสามารถรับเคสนี้ได้')) return;
+  const btn = document.getElementById('saveCustomerBtn');
+  btn.disabled = true;
+  google.script.run
+    .withSuccessHandler(msg => {
+      btn.disabled = false;
+      alert(msg);
+      modalEl.hide();
+      loadData();
+      loadMarketplace();
+    })
+    .withFailureHandler(err => { btn.disabled = false; alert('ส่งตลาดไม่สำเร็จ: ' + err); })
+    .sendToMarketplace(id, currentUser.username);
+}
+
+function acceptMarketplaceCase(caseId) {
+  if (!confirm('ต้องการรับเคส ' + caseId + ' หรือ?')) return;
+  showLoading('กำลังรับเคส...');
+  google.script.run
+    .withSuccessHandler(msg => {
+      hideLoading();
+      alert(msg);
+      loadData();
+      loadMarketplace();
+    })
+    .withFailureHandler(err => { hideLoading(); alert('รับเคสไม่สำเร็จ: ' + err); })
+    .acceptMarketplaceCase(caseId, currentUser.username);
+}
+
+// ===== Export Excel =====
+function exportExcel() {
+  const rows = document.querySelectorAll('#customerTable tr');
+  let csv = '\uFEFF';
+  csv += 'ID,วันที่,เบอร์โทร,ชื่อลูกค้า,สถานะ,ผู้ดูแล,Remark\n';
+  rows.forEach(row => {
+    if (row.style.display === 'none') return;
+    const c = row.cells[0];
+    const id        = c.querySelector('.text-primary').innerText.replace(/⚠️.*/,'').trim();
+    const divs      = c.querySelectorAll('div');
+    const name      = divs[1].innerText.trim();
+    const phone     = divs[2].innerText.trim();
+    const badge     = c.querySelector('.badge').innerText.trim();
+    const assign    = divs[3].innerText.replace(badge,'').replace('|','').trim();
+    const dateDiv   = c.querySelector('.text-muted');
+    const dateVal   = dateDiv ? dateDiv.innerText.replace('📅','').trim() : '';
+    const remarkDiv = c.querySelector('.remark-text');
+    const remark    = remarkDiv ? remarkDiv.innerText.trim() : '-';
+    csv += `"${id}","${dateVal}","${phone}","${name}","${badge}","${assign}","${remark}"\n`;
+  });
+  const now    = new Date();
+  const label  = `${now.getFullYear()}${String(now.getMonth()+1).padStart(2,'0')}${String(now.getDate()).padStart(2,'0')}`;
+  const blob   = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+  const url    = URL.createObjectURL(blob);
+  const a      = document.createElement('a');
+  a.href       = url;
+  a.download   = `CRM_AmHomeCar_${label}.csv`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+// ===== ประวัติการแก้ไข =====
+function openLog() {
+  showLoading('กำลังโหลดประวัติ...');
+  google.script.run
+    .withSuccessHandler(logs => {
+      hideLoading();
+      const tbody = document.getElementById('logTable');
+      tbody.innerHTML = '';
+      if (!logs.length) {
+        tbody.innerHTML = '<tr><td colspan="4" class="text-center text-muted">ยังไม่มีประวัติ</td></tr>';
+      } else {
+        logs.forEach(l => {
+          const actionLabel = {
+            'add': '➕ เพิ่ม',
+            'edit': '✏️ แก้ไข',
+            'delete': '🗑️ ลบ',
+            'marketplace_accept': '🏪 รับจากตลาด',
+            'marketplace_send': '📤 ส่งตลาด'
+          }[l[1]] || l[1];
+          tbody.innerHTML += `<tr>
+            <td class="small">${escapeHtml(l[0])}</td>
+            <td>${actionLabel}</td>
+            <td class="fw-bold text-primary">${escapeHtml(l[2])}</td>
+            <td class="small">${escapeHtml(l[4])}</td>
+          </tr>`;
+        });
+      }
+      logModal.show();
+    })
+    .withFailureHandler(err => { hideLoading(); alert('โหลดประวัติไม่สำเร็จ: ' + err); })
+    .getLogs();
+}
+function closeLog() { logModal.hide(); }
+
+// ===== รายงานรายเดือน =====
+function openReport() {
+  const now = new Date();
+  document.getElementById('reportMonth').value = String(now.getMonth()+1).padStart(2,'0');
+  document.getElementById('reportYear').value  = String(now.getFullYear()).slice(-2);
+  document.getElementById('reportContent').innerHTML = '';
+  reportModal.show();
+}
+function closeReport() { reportModal.hide(); }
+
+function loadReport() {
+  const month = document.getElementById('reportMonth').value;
+  const year  = document.getElementById('reportYear').value;
+  showLoading('กำลังโหลดรายงาน...');
+  google.script.run
+    .withSuccessHandler(res => {
+      hideLoading();
+      const { report, total } = res;
+      const monthNames = {
+        '01':'มกราคม','02':'กุมภาพันธ์','03':'มีนาคม','04':'เมษายน',
+        '05':'พฤษภาคม','06':'มิถุนายน','07':'กรกฎาคม','08':'สิงหาคม',
+        '09':'กันยายน','10':'ตุลาคม','11':'พฤศจิกายน','12':'ธันวาคม'
+      };
+      let html = `<div class="text-center mb-3"><span class="badge bg-primary fs-6">รวมทั้งหมด ${total} เคส</span></div>`;
+      html += `<table class="table table-bordered table-sm text-center align-middle">
+        <thead class="table-dark"><tr>
+          <th>เซลล์</th><th>รวม</th>
+          <th class="text-success">ไปต่อได้</th>
+          <th class="text-danger">ไปต่อไม่ได้</th>
+          <th class="text-info">ปิดการขาย</th>
+          <th class="text-warning">ติดตาม</th>
+          <th style="color:#fd7e14;">จองแล้ว</th>
+          <th style="color:#20c997;">จัดไฟแนนซ์</th>
+          <th style="color:#6c757d;">ไม่ให้ความร่วมมือ</th>
+        </tr></thead><tbody>`;
+      Object.keys(report).sort().forEach(sale => {
+        const d = report[sale];
+        html += `<tr>
+          <td class="fw-bold text-start">${escapeHtml(sale)}</td>
+          <td class="fw-bold">${d.total}</td>
+          <td class="text-success">${d['ไปต่อได้']||0}</td>
+          <td class="text-danger">${d['ไปต่อไม่ได้']||0}</td>
+          <td class="text-info">${d['ปิดการขาย']||0}</td>
+          <td class="text-warning">${d['ติดตาม']||0}</td>
+          <td style="color:#fd7e14;">${d['จองแล้ว']||0}</td>
+          <td style="color:#20c997;">${d['จัดไฟแนนซ์']||0}</td>
+          <td style="color:#6c757d;">${d['ไม่ให้ความร่วมมือ']||0}</td>
+        </tr>`;
+      });
+      html += '</tbody></table>';
+      document.getElementById('reportContent').innerHTML = html;
+    })
+    .withFailureHandler(err => { hideLoading(); alert('โหลดรายงานไม่สำเร็จ: ' + err); })
+    .getMonthlyReport(year, month);
+}
+
+// ===== จัดการ Users =====
+function openUserManager() {
+  showLoading('กำลังโหลด Users...');
+  google.script.run
+    .withSuccessHandler(users => {
+      hideLoading();
+      const tbody = document.getElementById('userTable');
+      tbody.innerHTML = '';
+      users.forEach(u => {
+        // BUG FIX: ใช้ data-* แทน inline string ใน onclick
+        tbody.innerHTML += `<tr>
+          <td>${renderAvatar(u[4], u[2], 34)}</td>
+          <td><div class="fw-bold">${escapeHtml(u[0])}</div><div class="small text-muted">🔑 ${escapeHtml(u[1])}</div></td>
+          <td>${escapeHtml(u[2])}</td>
+          <td><span class="badge ${u[3].toLowerCase()==='admin'?'bg-danger':'bg-secondary'}">${escapeHtml(u[3])}</span></td>
+          <td class="text-center">
+            <button class="btn btn-outline-primary btn-sm"
+              data-username="${escapeHtml(u[0])}"
+              data-password="${escapeHtml(u[1])}"
+              data-name="${escapeHtml(u[2])}"
+              data-role="${escapeHtml(u[3])}"
+              data-img="${escapeHtml(u[4]||'')}"
+              onclick="showUserFormFromBtn(this)">แก้ไข</button>
+          </td>
+        </tr>`;
+      });
+      userManagerModal.show();
+    })
+    .withFailureHandler(err => { hideLoading(); alert('โหลด Users ไม่สำเร็จ: ' + err); })
+    .getUsers();
+}
+function closeUserManager() { userManagerModal.hide(); }
+
+// BUG FIX: ฟังก์ชันใหม่รับ data จาก data-* อย่างปลอดภัย
+function showUserFormFromBtn(btn) {
+  showUserForm(btn.dataset.username, btn.dataset.password, btn.dataset.name, btn.dataset.role, btn.dataset.img);
+}
+
+function showUserForm(username='', password='', name='', role='user', img='') {
+  const isEdit = username !== '';
+  document.getElementById('userFormTitle').innerText = isEdit ? 'แก้ไข User: ' + username : 'เพิ่ม User ใหม่';
+  document.getElementById('originalUsername').value = username;
+  document.getElementById('uUsername').value        = username;
+  document.getElementById('uPassword').value        = password;
+  document.getElementById('uDisplayName').value     = name;
+  document.getElementById('uRole2').value           = role;
+  document.getElementById('uImg').value             = img;
+  userFormModal.show();
+}
+function closeUserForm() { userFormModal.hide(); }
+
+function saveUser() {
+  const username = document.getElementById('uUsername').value.trim();
+  const password = document.getElementById('uPassword').value.trim();
+  const name     = document.getElementById('uDisplayName').value.trim();
+  if (!username || !password || !name) { alert('กรุณากรอก Username, Password และชื่อให้ครบ'); return; }
+  const btn = document.getElementById('saveUserBtn');
+  btn.disabled = true; btn.innerText = 'กำลังบันทึก...';
+  const data = {
+    originalUsername: document.getElementById('originalUsername').value,
+    username, password, name,
+    role: document.getElementById('uRole2').value,
+    img:  document.getElementById('uImg').value.trim()
+  };
+  // BUG FIX: เรียก processUserAccount ให้ตรงกับชื่อฟังก์ชันใน Code.gs
+  google.script.run
+    .withSuccessHandler(msg => {
+      btn.disabled = false;
+      btn.innerText = 'บันทึก';
+      alert(msg);
+      userFormModal.hide();
+      openUserManager();
+    })
+    .withFailureHandler(err => {
+      btn.disabled = false;
+      btn.innerText = 'บันทึก';
+      alert('เกิดข้อผิดพลาด: ' + (err.message || err));
+    })
+    .processUserAccount(data);
+}
+</script>
+</body>
+</html>
